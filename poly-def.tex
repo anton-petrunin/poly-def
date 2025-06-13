@@ -1,0 +1,90 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{paper-en}
+\usepackage{hyperref}
+
+
+
+
+%\usepackage[notref,notcite,color]{showkeys}
+
+
+\def\thetitle{Polyhedral spaces}
+\def\theauthors{}
+
+\hypersetup{colorlinks=true,
+citecolor=black,
+linkcolor=black,
+anchorcolor=black,
+filecolor=black,
+menucolor=black,
+urlcolor=black,
+pdftitle={\thetitle},
+pdfauthor={\theauthors}
+}
+
+
+
+
+
+
+
+
+%\usepackage[a-2b,mathxmp]{pdfx}[2018/12/22]
+
+%\overfullrule=100mm
+
+\begin{document}
+%\pagestyle{empty}\renewcommand\includegraphics[2][{}]{}
+
+
+\title{\thetitle}
+\author{\theauthors}
+\date{}
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+
+This paper should discuss different definitions of polyhdral sapaces and their basic properties, including the natural stratification and maybe holonomy group; anything else?
+(We should not get into curvature bounds, otherwise it will be infinite.)
+
+Let us define polyhedral space as a simplisial complex $S$ equipped with length metric such that each simplex is isometric to a Eucliden simplex.
+(There are spherical and hyperbolic analogs.)
+
+One may put extra conditions on complex and metric:
+\begin{itemize}
+\item $S$ is locally finite; equivalently, the space is locally compact.
+\item Pure: any simplex in $S$ is a face of some $n$-simplex for some fixed $n\ge 0$.
+\item Normal: $S$ is normal and any curve in $S$ can be approximated by a curve that runs in the simplicies of codimension 0 and 1.
+\item Pseudomanifold/triangulated manifold/PL-manifold:...
+\item Completeness of metric.
+\end{itemize}
+
+Here is an incomplete list of texts where polyhedral spaces were defined: \cite{alexander-kapovitch-petrunin2019,alexander-kapovitch-petrunin2024,botero-gil-sombra,burago-burago-ivanov,lebedeva-petrunin,milka1968,milka1969,minemyer2015,bridson-haefliger,panov2009}; it does not include polyhedral surfaces.
+
+\section{Tringulations}
+
+We should prove that two triangulations of a polyhedral space are equivalent;
+that is, thay have a common subdivision.
+What else?
+
+The following statement should help and it should also lead to a better version of the main theorem in \cite{lebedeva-petrunin}.
+
+\begin{thm}{Theorem}
+Suppose a compact metric space $K$ admits a finite covering by conic balls $B(v_1,r_1),\dots,B(v_k,r_k)$,
+then the nerve $N$ of the covering admits a map to $K$ that sends each simplex to an isometric copy of Euclidean polytop in $K$ and each vetex of $N$ is mapped to the center of the corresponding ball.
+\end{thm}
+
+Maybe it is possible to make a triangulation of $K$ with these vertices?
+
+
+
+{\sloppy
+\printbibliography[heading=bibintoc]
+\fussy
+}
+
+\end{document}

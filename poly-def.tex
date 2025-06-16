@@ -65,6 +65,39 @@ One may put extra conditions on complex and metric:
 
 Here is an incomplete list of texts where polyhedral spaces were defined: \cite{alexander-kapovitch-petrunin2019,alexander-kapovitch-petrunin2024,botero-gil-sombra,burago-burago-ivanov,lebedeva-petrunin,milka1968,milka1969,minemyer2015,bridson-haefliger,panov2009}; it does not include polyhedral surfaces.
 
+\section{Conical domains}
+
+Let $\Sigma$ be a metric space with diameter at most $\pi$.
+Consider the topological cone
+$K=[0,\infty)\times\Sigma/{\sim}$, where $(0,x)\sim(0,y)$ for all $x,y\in\Sigma$.
+We equip $K$ with the metric defined by the rule of cosines;
+that is, for any $a,b\in[0,\infty)$ and $x,y\in\Sigma$,
+we set
+$$|(a,x)-(b,y)|_K^2=a^2+b^2-2\cdot a\cdot b\cdot\cos |x-y|_\Sigma.$$
+The resulting space $K$ is called the \emph{Euclidean cone over} $\Sigma$.
+All pairs of the form $(0,x)$ correspond to a single point in $K$,
+referred to as the \emph{tip} of the cone.
+A metric space that can be obtained in this way is called a \emph{Euclidean cone}.
+
+
+\begin{thm}{Definition}
+Let $X$ be a metric space, $x\in X$, and let $U$ be a neighborhood of $x$.
+We say that $U$ is a \emph{conic neighborhood} of $x$
+if there exists an open distance-preserving embedding
+$\iota \: U \to K_x$
+into a Euclidean cone $K_x$
+such that $\iota(x)$ is the tip of the cone.
+\end{thm}
+
+Recall that a geodesic is a distance-preserving map from a real interval into a metric space.
+
+\begin{thm}{Claim}
+An open convex set $U$ in a geodesic metric space is a conic neighborhood of $p\in U$ if and only if the function $f(x)=\tfrac12\cdot\dist_p(x)^2$ satisfies the differenitial equation $f''=1$ in $U$;
+that is, $(f\circ\gamma)''(t)\equiv 1$ for any geodesic $\gamma$ in $U$.
+\end{thm}
+
+Maybe we need generalize it to $p\notin U$ and maybe it could be generalize to the case of arbitrary function, satisfying this equation.
+
 \section{Tringulations}
 
 We should prove that two triangulations of a polyhedral space are equivalent;
